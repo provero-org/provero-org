@@ -19,7 +19,11 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Provero - Prove your data.",
+  metadataBase: new URL("https://provero.org"),
+  title: {
+    default: "Provero - Prove your data.",
+    template: "%s | Provero",
+  },
   description:
     "A vendor-neutral, declarative data quality engine. Open source. Apache 2.0 licensed. Data quality checks in YAML. Runs anywhere.",
   icons: {
@@ -35,18 +39,37 @@ export const metadata: Metadata = {
     "PostgreSQL",
     "anomaly detection",
     "data contracts",
+    "data quality engine",
+    "data quality checks",
+    "provero",
   ],
+  alternates: {
+    canonical: "https://provero.org",
+  },
   openGraph: {
     title: "Provero - Prove your data.",
     description: "Declarative data quality engine. Open source. Apache 2.0.",
     url: "https://provero.org",
     siteName: "Provero",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Provero - Declarative data quality engine",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Provero - Prove your data.",
     description: "Declarative data quality engine. Open source. Apache 2.0.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -64,23 +87,42 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: "Provero",
+              description: "A vendor-neutral, declarative data quality engine. Open source. Apache 2.0 licensed.",
+              url: "https://provero.org",
+              applicationCategory: "DeveloperApplication",
+              operatingSystem: "Cross-platform",
+              license: "https://www.apache.org/licenses/LICENSE-2.0",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "USD",
+              },
+              author: {
+                "@type": "Organization",
+                name: "Provero",
+                url: "https://provero.org",
+                logo: "https://provero.org/logo-mark.svg",
+                sameAs: [
+                  "https://github.com/provero-org",
+                  "https://linkedin.com/company/provero-org",
+                  "https://www.reddit.com/r/provero/",
+                  "https://provero.slack.com/",
+                ],
+              },
+            }),
+          }}
+        />
       </head>
       <body
         className={`${ibmPlexMono.variable} ${spaceGrotesk.variable} font-sans antialiased`}
       >
-        <div className="flex items-center justify-center gap-3 bg-navy px-4 py-2.5 text-center text-sm text-white/70">
-          <span className="relative flex h-2 w-2 shrink-0">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-light opacity-75" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-light" />
-          </span>
-          <span>Provero is in active development.</span>
-          <a
-            href="https://github.com/provero-org/provero"
-            className="font-semibold text-emerald-light underline underline-offset-2 hover:text-white transition-colors"
-          >
-            Star the repo to follow our progress
-          </a>
-        </div>
         <Navbar />
         {children}
         <Footer />

@@ -95,6 +95,8 @@ export function Community() {
                 </p>
                 <a
                   href={card.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-emerald transition-colors hover:text-emerald-dark"
                 >
                   {card.cta}
@@ -108,6 +110,8 @@ export function Community() {
         <div className="mt-16 flex justify-center gap-6">
           <a
             href="https://github.com/provero-org"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-slate/25 hover:text-emerald transition-colors"
           >
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -116,6 +120,8 @@ export function Community() {
           </a>
           <a
             href="https://provero.slack.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-slate/25 hover:text-emerald transition-colors"
           >
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -124,6 +130,8 @@ export function Community() {
           </a>
           <a
             href="https://www.reddit.com/r/provero/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-slate/25 hover:text-emerald transition-colors"
           >
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -132,6 +140,8 @@ export function Community() {
           </a>
           <a
             href="https://linkedin.com/company/provero-org"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-slate/25 hover:text-emerald transition-colors"
           >
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">

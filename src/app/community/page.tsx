@@ -79,6 +79,8 @@ export default function CommunityPage() {
                   </p>
                   <a
                     href={channel.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-emerald transition-colors hover:text-emerald-dark"
                   >
                     {channel.cta}
@@ -98,6 +100,8 @@ export default function CommunityPage() {
               <div className="mt-6 flex justify-center gap-4">
                 <a
                   href="https://github.com/provero-org/provero"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-xl bg-navy px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-slate hover:-translate-y-0.5"
                 >
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">

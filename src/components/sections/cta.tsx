@@ -30,6 +30,8 @@ export function CTA() {
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href="https://github.com/provero-org/provero#readme"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex h-14 items-center gap-2 rounded-xl bg-emerald px-10 text-lg font-semibold text-white shadow-lg shadow-emerald/30 transition-all hover:bg-emerald-light hover:shadow-xl hover:shadow-emerald/40 hover:-translate-y-0.5"
             >
               Get Started
@@ -37,6 +39,8 @@ export function CTA() {
             </a>
             <a
               href="https://github.com/provero-org/provero"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex h-14 items-center rounded-xl border border-white/15 bg-white/5 px-10 text-lg font-medium text-white/70 backdrop-blur-sm transition-all hover:bg-white/10 hover:border-white/25 hover:-translate-y-0.5"
             >
               Star on GitHub

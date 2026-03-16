@@ -116,6 +116,8 @@ export function Ecosystem() {
             </div>
             <a
               href="https://github.com/provero-org/provero/issues"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-xl bg-gold px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-gold-light hover:-translate-y-0.5 shrink-0"
             >
               Request Connector

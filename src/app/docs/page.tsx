@@ -54,6 +54,8 @@ export default function DocsPage() {
               </p>
               <a
                 href="https://github.com/provero-org/provero#readme"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-8 inline-flex items-center gap-2 rounded-xl bg-emerald px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-emerald-dark hover:shadow-lg hover:-translate-y-0.5"
               >
                 Full Documentation on GitHub
@@ -67,6 +69,8 @@ export default function DocsPage() {
               <AnimateOnScroll key={link.title} delay={i * 0.08}>
                 <a
                   href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group block rounded-2xl border border-neutral-200/80 bg-white p-8 transition-all hover:shadow-xl hover:-translate-y-1 h-full"
                 >
                   <h3 className="text-lg font-bold text-navy group-hover:text-emerald transition-colors">

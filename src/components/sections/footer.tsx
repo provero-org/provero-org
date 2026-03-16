@@ -21,6 +21,8 @@ export function Footer() {
             <div className="mt-6 flex items-center gap-4">
               <a
                 href="https://github.com/provero-org"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white/25 hover:text-emerald-light transition-colors"
               >
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -29,6 +31,8 @@ export function Footer() {
               </a>
               <a
                 href="https://provero.slack.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white/25 hover:text-emerald-light transition-colors"
               >
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -37,6 +41,8 @@ export function Footer() {
               </a>
               <a
                 href="https://www.reddit.com/r/provero/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white/25 hover:text-emerald-light transition-colors"
               >
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -45,6 +51,8 @@ export function Footer() {
               </a>
               <a
                 href="https://linkedin.com/company/provero-org"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white/25 hover:text-emerald-light transition-colors"
               >
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -83,7 +91,11 @@ export function Footer() {
                 { label: "Changelog", href: "https://github.com/provero-org/provero/releases" },
               ].map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sm text-white/30 hover:text-emerald-light transition-colors">
+                  <a
+                    href={link.href}
+                    {...(link.href.startsWith("https://") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                    className="text-sm text-white/30 hover:text-emerald-light transition-colors"
+                  >
                     {link.label}
                   </a>
                 </li>
@@ -102,7 +114,12 @@ export function Footer() {
                 { label: "Contributing", href: "https://github.com/provero-org/provero/blob/main/CONTRIBUTING.md" },
               ].map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sm text-white/30 hover:text-emerald-light transition-colors">
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-white/30 hover:text-emerald-light transition-colors"
+                  >
                     {link.label}
                   </a>
                 </li>
@@ -119,7 +136,12 @@ export function Footer() {
                 { label: "Code of Conduct", href: "https://github.com/provero-org/provero/blob/main/CODE_OF_CONDUCT.md" },
               ].map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sm text-white/30 hover:text-emerald-light transition-colors">
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-white/30 hover:text-emerald-light transition-colors"
+                  >
                     {link.label}
                   </a>
                 </li>

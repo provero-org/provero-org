@@ -41,6 +41,21 @@ export function Navbar() {
           : "bg-transparent"
       }`}
     >
+      <div className="flex items-center justify-center gap-3 bg-navy px-4 py-2 text-center text-xs sm:text-sm text-white/70">
+        <span className="relative flex h-1.5 w-1.5 shrink-0">
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-light opacity-75" />
+          <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-light" />
+        </span>
+        <span>Provero is in active development.</span>
+        <a
+          href="https://github.com/provero-org/provero"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-emerald-light underline underline-offset-2 hover:text-white transition-colors"
+        >
+          Star the repo to follow our progress
+        </a>
+      </div>
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <a href="/" className="flex items-center gap-2.5 group">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -65,6 +80,8 @@ export function Navbar() {
           <AnimatedThemeToggler className="flex h-9 w-9 items-center justify-center rounded-lg border border-neutral-200 bg-white text-navy/60 transition-all hover:border-neutral-300 hover:text-navy dark:border-white/10 dark:bg-white/5 dark:text-white/60 dark:hover:text-white" />
           <a
             href="https://github.com/provero-org/provero"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-neutral-200 bg-white px-4 py-2 text-sm font-medium text-navy transition-all hover:border-neutral-300 hover:shadow-sm dark:border-white/10 dark:bg-white/5 dark:text-white/80"
           >
             <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
@@ -75,6 +92,8 @@ export function Navbar() {
           </a>
           <a
             href="https://github.com/provero-org/provero#readme"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg bg-emerald px-4 py-2 text-sm font-medium text-white transition-all hover:bg-emerald-dark hover:shadow-md hover:shadow-emerald/20"
           >
             Get Started
@@ -108,6 +127,8 @@ export function Navbar() {
           <div className="mt-4 flex flex-col gap-2">
             <a
               href="https://github.com/provero-org/provero"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 rounded-lg border border-neutral-200 px-4 py-2.5 text-sm font-medium text-navy"
             >
               <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
@@ -118,6 +139,8 @@ export function Navbar() {
             </a>
             <a
               href="https://github.com/provero-org/provero#readme"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block rounded-lg bg-emerald px-4 py-2.5 text-center text-sm font-medium text-white"
             >
               Get Started
