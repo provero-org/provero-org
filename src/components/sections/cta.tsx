@@ -6,12 +6,12 @@ import { AnimateOnScroll } from "@/components/ui/animate-on-scroll";
 
 export function CTA() {
   return (
-    <section className="relative overflow-hidden bg-navy pt-36 pb-0">
-      <Particles className="absolute inset-0 h-full w-full" quantity={40} color="#10B981" size={0.3} />
+    <section className="relative overflow-hidden bg-navy pt-20 pb-0">
+      <Particles className="absolute inset-0 h-full w-full" quantity={50} color="#10B981" size={0.3} staticity={30} />
       <div className="absolute top-0 left-1/3 w-[500px] h-[500px] bg-emerald/10 rounded-full blur-[150px] pointer-events-none" />
       <div className="absolute bottom-0 right-1/3 w-[400px] h-[400px] bg-gold/5 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="relative mx-auto max-w-3xl px-6 text-center lg:px-8 pb-36">
+      <div className="relative mx-auto max-w-3xl px-6 text-center lg:px-8 pb-24">
         <AnimateOnScroll>
           <h2 className="text-5xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl">
             Your data deserves{" "}
@@ -49,8 +49,6 @@ export function CTA() {
         </AnimateOnScroll>
       </div>
 
-      {/* Gradient fade into footer */}
-      <div className="h-px bg-white/[0.06]" />
     </section>
   );
 }

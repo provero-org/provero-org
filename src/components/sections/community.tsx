@@ -57,7 +57,7 @@ const cards = [
 
 export function Community() {
   return (
-    <section className="py-36 bg-off-white">
+    <section className="relative pt-36 pb-36 bg-off-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <AnimateOnScroll>
           <div className="text-center max-w-3xl mx-auto mb-20">

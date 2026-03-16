@@ -1,9 +1,14 @@
 "use client";
 
+import { Particles } from "@/components/magicui/particles";
+
 export function Footer() {
   return (
-    <footer className="bg-navy pt-20 pb-10">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <footer className="relative bg-navy pt-16 pb-10 overflow-hidden">
+      <Particles className="absolute inset-0 h-full w-full" quantity={20} color="#10B981" size={0.2} staticity={50} />
+      <div className="absolute top-0 right-1/3 w-[400px] h-[300px] bg-gold/[0.03] rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 left-1/3 w-[500px] h-[300px] bg-emerald/[0.05] rounded-full blur-[150px] pointer-events-none" />
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-5">
           {/* Brand */}
           <div className="lg:col-span-1">
