@@ -15,18 +15,18 @@ const posts = [
   {
     title: "Provero vs Great Expectations vs Soda Core",
     description:
-      "A deep comparison of the three most popular data quality tools. Config complexity, licensing, and feature parity.",
-    date: "Coming soon",
+      "A deep comparison of three data quality tools: config complexity, licensing, and feature parity.",
+    date: "March 22, 2026",
     tag: "Comparison",
-    href: null,
+    href: "/blog/provero-vs-gx-vs-soda",
   },
   {
     title: "Data Quality for AI Pipelines",
     description:
       "How to use Provero to validate training data, detect drift, and enforce data contracts in ML workflows.",
-    date: "Coming soon",
+    date: "March 22, 2026",
     tag: "Tutorial",
-    href: null,
+    href: "/blog/data-quality-for-ai-pipelines",
   },
 ];
 
