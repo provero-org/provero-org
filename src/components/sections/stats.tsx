@@ -4,8 +4,8 @@ import { NumberTicker } from "@/components/magicui/number-ticker";
 import { AnimateOnScroll } from "@/components/ui/animate-on-scroll";
 
 const stats = [
-  { value: 14, suffix: "", label: "Check Types", detail: "Built-in validations" },
-  { value: 9, suffix: "", label: "Connectors", detail: "DuckDB to BigQuery" },
+  { value: 16, suffix: "", label: "Check Types", detail: "Built-in validations" },
+  { value: 7, suffix: "", label: "Connectors", detail: "DuckDB to BigQuery" },
   { value: 3, suffix: "", label: "Lines to Start", detail: "Minimal config" },
   { value: 100, suffix: "%", label: "Open Source", detail: "Apache 2.0 forever" },
 ];

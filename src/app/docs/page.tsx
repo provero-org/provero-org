@@ -16,7 +16,7 @@ const quickLinks = [
   },
   {
     title: "Check Types",
-    description: "14 built-in check types: not_null, unique, range, regex, freshness, anomaly, and more.",
+    description: "16 built-in check types: not_null, unique, range, regex, freshness, anomaly, referential_integrity and more.",
     href: "https://github.com/provero-org/provero#check-types",
   },
   {
@@ -30,8 +30,23 @@ const quickLinks = [
     href: "https://github.com/provero-org/provero#anomaly-detection",
   },
   {
+    title: "Data Contracts",
+    description: "Schema validation, SLA enforcement, and contract diffs. Define ownership and accountability for your data.",
+    href: "https://github.com/provero-org/provero#data-contracts",
+  },
+  {
+    title: "CLI Reference",
+    description: "provero run, profile, watch, import soda, export dbt. Full command reference.",
+    href: "https://github.com/provero-org/provero#cli",
+  },
+  {
+    title: "Airflow Integration",
+    description: "ProveroCheckOperator and decorators for Apache Airflow. Plug into your existing DAGs.",
+    href: "https://github.com/provero-org/provero#airflow",
+  },
+  {
     title: "API Reference",
-    description: "Python API for programmatic usage, custom integrations, and Airflow operators.",
+    description: "Python API for programmatic usage, custom integrations, and result store.",
     href: "https://github.com/provero-org/provero#api",
   },
 ];

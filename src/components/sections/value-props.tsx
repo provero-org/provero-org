@@ -30,9 +30,9 @@ export function ValueProps() {
                 </pre>
               </div>
               <p className="mt-6 text-sm text-navy/35 leading-relaxed">
-                14 check types: not_null, unique, range, regex, freshness, anomaly, custom_sql,
+                16 check types: not_null, unique, range, regex, freshness, anomaly, custom_sql,
                 row_count, completeness, accepted_values, type, latency, unique_combination,
-                row_count_change.
+                row_count_change, referential_integrity, email_validation.
               </p>
             </div>
           </AnimateOnScroll>
