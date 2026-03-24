@@ -53,7 +53,7 @@ export function Hero() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-gold opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-gold" />
               </span>
-              <span className="text-[0.938rem] font-medium text-gold">Coming Soon &middot; Open Source &middot; Apache 2.0</span>
+              <span className="text-[0.938rem] font-medium text-gold">v0.2.1 &middot; Open Source &middot; Apache 2.0</span>
               <ChevronRight className="h-3.5 w-3.5 text-navy/30 transition-transform group-hover:translate-x-0.5" />
             </a>
 

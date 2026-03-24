@@ -10,6 +10,8 @@ import {
   GitBranch,
   Cpu,
   Search,
+  RefreshCw,
+  Eye,
 } from "lucide-react";
 
 const features = [
@@ -22,8 +24,8 @@ const features = [
   },
   {
     icon: Zap,
-    title: "14 Check Types",
-    description: "not_null, unique, range, regex, freshness, anomaly, custom_sql and more. All built in.",
+    title: "16 Check Types",
+    description: "not_null, unique, range, regex, freshness, anomaly, custom_sql, referential_integrity and more. All built in.",
     color: "from-gold/10 to-gold/5",
     iconColor: "text-gold bg-gold/10",
   },
@@ -69,11 +71,25 @@ const features = [
     color: "from-cyan-500/10 to-cyan-500/5",
     iconColor: "text-cyan-600 bg-cyan-500/10",
   },
+  {
+    icon: RefreshCw,
+    title: "Migration Tools",
+    description: "Import from SodaCL or export to dbt tests. Switch to Provero without starting from scratch.",
+    color: "from-orange-500/10 to-orange-500/5",
+    iconColor: "text-orange-500 bg-orange-500/10",
+  },
+  {
+    icon: Eye,
+    title: "Continuous Monitoring",
+    description: "provero watch runs checks on a schedule and tracks metrics over time with the built-in result store.",
+    color: "from-indigo-500/10 to-indigo-500/5",
+    iconColor: "text-indigo-600 bg-indigo-500/10",
+  },
 ];
 
 export function Features() {
   return (
-    <section id="features" className="relative py-32 bg-off-white">
+    <section id="all-features" className="relative py-32 bg-off-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-2xl">
           <span className="font-mono text-xs font-semibold text-emerald uppercase tracking-[0.2em]">
@@ -89,7 +105,7 @@ export function Features() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {features.map((feature) => (
             <MagicCard
               key={feature.title}

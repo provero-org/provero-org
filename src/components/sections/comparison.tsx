@@ -58,6 +58,15 @@ const rows: { feature: string; values: { v: boolean | string; label?: string }[]
     feature: "Airflow Integration",
     values: [{ v: true }, { v: true }, { v: true }, { v: true }],
   },
+  {
+    feature: "Migration Tools",
+    values: [
+      { v: true, label: "SodaCL & dbt" },
+      { v: false },
+      { v: false },
+      { v: false },
+    ],
+  },
 ];
 
 function CellIcon({ v }: { v: boolean | string }) {

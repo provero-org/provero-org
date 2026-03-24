@@ -39,6 +39,7 @@ const categories = [
     description: "Integrate into your existing workflow and notification stack.",
     items: [
       { name: "Apache Airflow", status: "stable", icon: logoUrl("apacheairflow") },
+      { name: "Flyte", status: "stable", icon: logoUrl("flyte") },
       { name: "Slack", status: "stable", icon: logoUrl("slack") },
       { name: "PagerDuty", status: "beta", icon: logoUrl("pagerduty") },
     ],
