@@ -35,7 +35,7 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://provero.slack.com/"
+                href="https://join.slack.com/t/provero/shared_invite/zt-3sj71s3ic-ey5Gf~Ls_YcmdMKkDz9oAQ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/25 hover:text-emerald-light transition-colors"
@@ -114,7 +114,7 @@ export function Footer() {
             <ul className="mt-5 space-y-3.5">
               {[
                 { label: "GitHub", href: "https://github.com/provero-org/provero" },
-                { label: "Slack", href: "https://provero.slack.com/" },
+                { label: "Slack", href: "https://join.slack.com/t/provero/shared_invite/zt-3sj71s3ic-ey5Gf~Ls_YcmdMKkDz9oAQ" },
                 { label: "Reddit", href: "https://www.reddit.com/r/provero/" },
                 { label: "Contributing", href: "https://github.com/provero-org/provero/blob/main/CONTRIBUTING.md" },
               ].map((link) => (
