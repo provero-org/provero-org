@@ -113,7 +113,7 @@ export default function RootLayout({
                   "https://github.com/provero-org",
                   "https://linkedin.com/company/provero-org",
                   "https://www.reddit.com/r/provero/",
-                  "https://provero.slack.com/",
+                  "https://join.slack.com/t/provero/shared_invite/zt-3sj71s3ic-ey5Gf~Ls_YcmdMKkDz9oAQ",
                 ],
               },
             }),
